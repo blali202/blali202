@@ -3,59 +3,180 @@ body {
   font-family: "Alegraya Sans", sans-serif;
   font-optical-sizing: auto;
   min-height: 100vh;
-  margin: 0;
+  margin: 0; 
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  padding: 0;
 }
 
-h1 {
-  position: relative;
+#statuslegend{
+  border-top: 2px ridge rgba(0, 0, 0, 0.527);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+
+header h1 {
+
   color: black;
   background: fixed;  
+  white-space: nowrap;
 }
 
 h2 {
-  margin-top: 10px;
-  margin-left: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+main {
+  display: flex;
+  flex: auto;
+  padding: 0;
 }
 
 header {
-  z-index: 100;
-  text-align: center;
-  padding: 1px;
-  font-size:large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7em; 
   background: rgb(10, 133, 59);
+  height:80px;
 }
 
 .sidebar {
   z-index: 101;
   display: flex;
-  flex: column;
+  flex: 0 0 225px;
+  flex-direction: column;
   position: sticky;
-  height: 84vh;
+  top: 0;
+  height: 100vh;
   text-align: center;
-  width: 275px;
-  border: 3px black #73AD21;
-  box-shadow: 4px 0px 4px rgb(138, 138, 138);
+  box-shadow: 1px 0px 4px rgb(138, 138, 138);
   background: rgb(62, 165, 103);
+  padding: .7em;
 }
 
 form input {
   font-size: 1em;
-  margin: 1em;
+  margin: 0.5em;
 }
 form select{
   font-size: 1em;
-  margin: 1em;
+  margin: 0.5em;
 }
-
 
 label{
   padding: 5px;
 }
-footer { 
-  z-index: 100;
-  text-align:center;
-  padding: 8px;
-  background: rgb(10, 133, 59);
+
+.footer {
+  z-index: 111;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4fac5462;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.footer button {
+  background-color: #1c8d00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+
+
+.footer button:hover {
+  background-color:  #105200;
+}
+
+
+
+.colour {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.438);
+}
+
+.colour-circle {
+  position: absolute;
+  bottom: -1em;
+  right: 10px; 
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 3;
+}
+
+
+.not-threatened {
+  background-color: #02a028;
+  color: #02a028;
+}
+
+.naturally-uncommon {
+  background-color: #649a31;
+  color: #649a31;
+}
+
+.relict {
+  background-color: #99cb68;
+  color: #99cb68;
+}
+
+.recovering {
+  background-color: #fecc33;
+  color: #fecc33;
+}
+
+.declining {
+  background-color: #fe9a01;
+  color: #fe9a01;
+}
+
+.nationally-increasing {
+  background-color: #c26967;
+  color: #c26967;
+}
+
+.nationally-vulnerable {
+  background-color: #9b0000;
+  color: #9b0000;
+}
+
+.nationally-endangered {
+  background-color: #660032;
+  color: #660032;
+}
+
+.nationally-critical {
+  background-color: #320033;
+  color: #320033;
+}
+
+.extinct {
+  background-color: black;
+  color: black;
+}
+
+.data-deficient {
+  background-color: black;
+  color: black;
 }
 
 .alegreya-sans-thin {
