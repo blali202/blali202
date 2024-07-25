@@ -12,6 +12,11 @@ h1 {
   background: fixed;  
 }
 
+h2 {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
 header {
   z-index: 100;
   text-align: center;
@@ -21,17 +26,31 @@ header {
 }
 
 .sidebar {
-  z-index: 3;
+  z-index: 101;
   display: flex;
   flex: column;
   position: sticky;
-  height: 100vh;
+  height: 84vh;
   text-align: center;
-  width: 300px;
+  width: 275px;
   border: 3px black #73AD21;
   box-shadow: 4px 0px 4px rgb(138, 138, 138);
+  background: rgb(62, 165, 103);
 }
 
+form input {
+  font-size: 1em;
+  margin: 1em;
+}
+form select{
+  font-size: 1em;
+  margin: 1em;
+}
+
+
+label{
+  padding: 5px;
+}
 footer { 
   z-index: 100;
   text-align:center;

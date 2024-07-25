@@ -16,7 +16,34 @@
         <div class = "sidebar">
             <form id = "filter">
                 <div id = "search">
-                    <h2> Filter your search </h2>
+                    <h2> Search Filters </h2>
+                    <label for="search"> Search: </label>
+                    <input type="text" id="search" placeholder="Eg: Kiwi">
+                    <label> Conservation Status </label>
+                    <select id="status">
+                        <option value="all"> All </option>
+                        <option value="not threatened"> Not Threatened </option>
+                        <option value="naturally uncommon"> Naturally Uncommon </option>
+                        <option value="relict"> Relict </option>
+                        <option value="recovering"> Recovering </option>
+                        <option value="declining"> Declining </option>
+                        <option value="nationally increasing"> Nationally Increasing </option>
+                        <option value="nationally vulnerable"> Nationally Vulnerable </option>
+                        <option value="nationally endangered"> Nationally Endangered </option>
+                        <option value="nationally critical"> Nationally Critical </option>
+                        <option value="extinct"> Extinct </option>
+                        <option value="data deficient"> Data Deficient </option>
+                    </select>
+                    <label> Sort </label>
+                    <select id="sort">
+                        <option value="none"> None </option>
+                        <option value="aToZ"> A-Z</option>
+                        <option value="zToA"> Z-A</option>
+                        <option value="heaviest"> Heaviest to Lightest</option>
+                        <option value="lightest"> Lightest to Heaviest</option>
+                    </select>
+                    <button id="filter-button"> Filter </button>
+                    <div id="num-results"></div>
                 </div>
             </form>
         </div>
