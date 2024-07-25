@@ -1,6 +1,42 @@
 body {
-  background: #C6E7D3;
-  
+  background-color: #C6E7D3;
+  font-family: "Alegraya Sans", sans-serif;
+  font-optical-sizing: auto;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  position: relative;
+  color: black;
+  background: fixed;  
+}
+
+header {
+  z-index: 100;
+  text-align: center;
+  padding: 1px;
+  font-size:large;
+  background: rgb(10, 133, 59);
+}
+
+.sidebar {
+  z-index: 3;
+  display: flex;
+  flex: column;
+  position: sticky;
+  height: 100vh;
+  text-align: center;
+  width: 300px;
+  border: 3px black #73AD21;
+  box-shadow: 4px 0px 4px rgb(138, 138, 138);
+}
+
+footer { 
+  z-index: 100;
+  text-align:center;
+  padding: 8px;
+  background: rgb(10, 133, 59);
 }
 
 .alegreya-sans-thin {
