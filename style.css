@@ -1,14 +1,19 @@
 body {
-  background-color: #C6E7D3;
-  font-family: "Alegraya Sans", sans-serif;
+  background-color: #c6e7d3;
+  font-family: "Alegreya Sans", sans-serif;
   min-height: 100vh;
   margin: 0; 
   display: flex;
   flex-direction: column;
   font-size: 1em;
   padding: 0;
+  background-image: url("kiwi.png"); /* Update with correct relative path */
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-size: 50px;
 }
-
 #statuslegend{
   display: flex;
   flex-direction: column;
@@ -52,12 +57,13 @@ ul {
 }
 header h1 {
 
-  color: black;
-  background: fixed;  
+  color: black; 
   white-space: nowrap;
 }
 #header-img{
   height: 70px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 h2 {
   margin-top: 1px;
@@ -71,13 +77,14 @@ main {
 }
 
 header {
+  z-index: 4;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.7em; 
   background: rgb(10, 133, 59);
   height:80px;
-  border-bottom: 4px solid black;
+  box-shadow: 0px 4px 4px black;
 }
 
 .sidebar {
@@ -88,8 +95,7 @@ header {
   top: 0;
   height: 100vh;
   text-align: left;
-  box-shadow: 1px 0px 4px rgb(138, 138, 138);
-  background: #3ea567;
+  background: #00000000;
   padding: 0.6em;
 }
 
@@ -191,6 +197,17 @@ label{
   background-color: black;
   color: black;
 }
+
+
+#birds{
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.bird{
+  
+}
+
 
 .alegreya-sans-thin {
     font-family: "Alegreya Sans", sans-serif;
