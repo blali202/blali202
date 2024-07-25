@@ -3,3 +3,4 @@ function dismissFooter() {
     footer.style.opacity = '0';
     footer.style.visibility = 'hidden';
 }
+ 

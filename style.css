@@ -1,7 +1,6 @@
 body {
   background-color: #C6E7D3;
   font-family: "Alegraya Sans", sans-serif;
-  font-optical-sizing: auto;
   min-height: 100vh;
   margin: 0; 
   display: flex;
@@ -11,23 +10,58 @@ body {
 }
 
 #statuslegend{
-  border-top: 2px ridge rgba(0, 0, 0, 0.527);
-  text-align: left;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+ul {
+  list-style-type: none;
+  padding: 7px;
+  margin: 3px;
+}
 
+.key{
+  font-size: 1.1em;
+}
+#search {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+#applyfilter {
+  margin: 0.3em;
+  border-radius: 10px;
+  background-color: #006e1a;
+  color: white;
+}
+#applyfilter-hover{
+  background-color: #004610;
+}
+#resetfilter {
+  margin: 0.3em;
+  border-radius: 10px;
+  background-color: #006e1a;
+  color: white;
+}
+#resetfilter-hover{
+  background-color: #004610;
+}
 header h1 {
 
   color: black;
   background: fixed;  
   white-space: nowrap;
 }
-
+#header-img{
+  height: 70px;
+}
 h2 {
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 1px;
+  margin-left: 1px;
 }
 
 main {
@@ -43,20 +77,20 @@ header {
   font-size: 1.7em; 
   background: rgb(10, 133, 59);
   height:80px;
+  border-bottom: 4px solid black;
 }
 
 .sidebar {
-  z-index: 101;
   display: flex;
   flex: 0 0 225px;
   flex-direction: column;
   position: sticky;
   top: 0;
   height: 100vh;
-  text-align: center;
+  text-align: left;
   box-shadow: 1px 0px 4px rgb(138, 138, 138);
-  background: rgb(62, 165, 103);
-  padding: .7em;
+  background: #3ea567;
+  padding: 0.6em;
 }
 
 form input {
@@ -69,11 +103,10 @@ form select{
 }
 
 label{
-  padding: 5px;
+  padding: 0.1em;
 }
 
 .footer {
-  z-index: 111;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -81,48 +114,28 @@ label{
   background-color: #4fac5462;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 3px;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   transition: opacity 0.2s ease, visibility 0.2s ease;
 }
-
-.footer button {
-  background-color: #1c8d00;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-left: 20px;
-  border-radius: 5px;
-}
-
-
-
-.footer button:hover {
-  background-color:  #105200;
-}
-
-
-
 .colour {
   display: inline-block;
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.438);
+  border: 1px solid rgba(255, 255, 255, 0.233);
 }
 
 .colour-circle {
   position: absolute;
   bottom: -1em;
-  right: 10px; 
+  right: 2px; 
   width: 2em;
   height: 2em;
   border-radius: 50%;
   border: 2px solid white;
   z-index: 3;
 }
-
 
 .not-threatened {
   background-color: #02a028;
