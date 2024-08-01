@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="kiwi.png">
-    <script src="script.js"></script>
+    <script defer src="main.js"></script>
     </head>
 <body>
     <header>
@@ -20,9 +20,9 @@
                 <div id="search">
                     <h2> Search Filters </h2>
                     <label for="search"> Search: </label>
-                    <input type="text" id="search" placeholder="Eg: Kiwi">
+                    <input type="text" id="searchinput" placeholder="Eg: Kiwi">
                     <label> Conservation Status </label>
-                    <select id="status">
+                    <select id="statusfilter">
                         <option value="all"> All </option>
                         <option value="not threatened"> Not Threatened </option>
                         <option value="naturally uncommon"> Naturally Uncommon </option>
@@ -37,7 +37,7 @@
                         <option value="data deficient"> Data Deficient </option>
                     </select>
                     <label> Sort </label>
-                    <select id="sort">
+                    <select id="sortfilter">
                         <option value="none"> None </option>
                         <option value="aToZ"> A-Z</option>
                         <option value="zToA"> Z-A</option>
@@ -100,9 +100,10 @@
                 </div>
             </form>
         </div>
-        <div id="birds"></div>
+        <div id="bird-tab"></div>
     </main>
-    <div class="footer" id="cookieFooter">
+    <div class="footer">
+        <button id="toggle-footer" class="footer-button">Understood</button>
         <p> Data licensed from <a href="https://www.birdsnz.org.nz/"> Birds New Zealand </a> for educational use within
             the University of Otago. </p>
     </div>
