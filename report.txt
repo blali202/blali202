@@ -1,0 +1,13 @@
+6334050
+
+https://altitude.otago.ac.nz/blali202/blali202
+
+https://blali202.cspages.otago.ac.nz/blali202/
+
+Known bugs: 
+- Zooming in too far can mess up text / image positioning on screen
+
+Extra features / Enhancements: 
+- Pop-up details tab, press the small white "Details" button on the bottom of each bird image.
+- "Understood" button for Birds New Zealand licensing, with small transition.
+- To get the colour of the status, press the details tab and look at the colour background behind the status

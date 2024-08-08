@@ -1,7 +1,7 @@
 const birdlist = "data/nzbird.json";
 const displaybirds = document.getElementById("bird-tab");
 const birdarray = [];
-const statusColors = {
+const statusColours = {
     "not threatened": "#02a028",
     "naturally uncommon": "#649a31",
     "relict": "#99cb68",
@@ -22,7 +22,7 @@ fetch(birdlist)
 function makeBirds(data) {
     for (const bird of data) {
         const status = bird.status.split(" ");
-        const ID = btoa(bird.scientific_name); //base64 encoded for to see if i could
+        const ID = btoa(bird.scientific_name); //base64 encoded to see if i could
 
         const nameDisplay = bird.original_name && bird.original_name.trim() ? `${bird.common_name} | ${bird.original_name}` : bird.common_name;
 
@@ -47,7 +47,7 @@ function makeBirds(data) {
                             <dt>Order</dt>
                             <dd>${bird.order}</dd>
                         </div>
-                        <div class="bird-status" style="background-color: ${statusColors[bird.status.toLowerCase()] || 'grey'};">
+                        <div class="bird-status" style="background-color: ${statusColours[bird.status.toLowerCase()] || 'grey'};">
                             <dt>Status</dt>
                             <dd>${bird.status}</dd>
                         </div>
